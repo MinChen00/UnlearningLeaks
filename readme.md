@@ -57,25 +57,25 @@ python main.py --exp model_train
 ###### Step 2: Membership Inference Attack under Different Settings ######
 
 ###### UnlearningLeaks in 'Retraining from scratch' ######
-python main.py --exp model_inf --unlearning_method scratch
+python main.py --exp mem_inf --unlearning_method scratch
 
 ###### UnlearningLeaks in 'SISA'
 python main.py --exp model_train --unlearning_method sisa
-python main.py --exp model_inf --unlearning_method sisa
+python main.py --exp mem_inf --unlearning_method sisa
 
 ###### UnlearningLeaks in 'Multiple intermediate versions'
-python main.py --exp model_inf --samples_to_evaluate in_out_multi_version
+python main.py --exp mem_inf --samples_to_evaluate in_out_multi_version
 
 ###### UnlearningLeaks in 'Group Deletion'
 python main.py --exp model_train --shadow_unlearning_num 10 --target_unlearning_num 10
-python main.py --exp model_inf --shadow_unlearning_num 10 --target_unlearning_num 10
+python main.py --exp mem_inf --shadow_unlearning_num 10 --target_unlearning_num 10
 
 ###### UnlearningLeaks in 'Online Learning'
 python main.py --exp model_train --samples_to_evaluate online_learning
-python main.py --exp model_inf --samples_to_evaluate online_learning
+python main.py --exp mem_inf --samples_to_evaluate online_learning
 
 ###### UnlearningLeaks against 'the remaining samples'
-python main.py --exp model_inf --samples_to_evaluate in_in
+python main.py --exp mem_inf --samples_to_evaluate in_in
 ```
 
 ### Citation
