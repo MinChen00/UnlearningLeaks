@@ -88,3 +88,7 @@ python main.py --exp mem_inf --samples_to_evaluate in_in
   year      = {2021}
 }
 ```
+
+### Related Work
+
+[1] [How to Combine Membership-Inference Attacks on Multiple Updated Models](https://arxiv.org/abs/2205.06369) [[Code]](https://github.com/stanleykywu/model-updates)
